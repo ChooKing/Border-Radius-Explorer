@@ -5,6 +5,9 @@ body, .example-container{
     display: grid;
     place-items: center;
 }
+header h1{
+    font-size: 3rem;
+}
 .example{
     --radius: 0;
     border: 1px solid white;
@@ -13,7 +16,7 @@ body, .example-container{
     border-radius: var(--radius);
 }
 .code{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-block: 1rem;
 }
 .controls form{
