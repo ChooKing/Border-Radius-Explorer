@@ -23,7 +23,6 @@ const ranges = {
 }
 const example = document.querySelector(".example");
 function update(){
-    const parts = {};
     let radiusA = [];
     let radiusB = [];
     checkBoxes.forEach(box => {
