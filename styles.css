@@ -1,0 +1,31 @@
+:root{
+    color-scheme: dark;
+}
+body, .example-container{
+    display: grid;
+    place-items: center;
+}
+.example{
+    --radius: 0;
+    border: 1px solid white;
+    height: 400px;
+    aspect-ratio: 1;
+    border-radius: var(--radius);
+}
+.code{
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+.controls form{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: max-content;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+}
+.slash{
+    grid-row: 1/5;
+    font-size: 12rem;
+    margin: 0 1rem;
+}
