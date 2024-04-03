@@ -53,3 +53,6 @@ Object.values(ranges).forEach(range => {
        }
    })
 });
+checkBoxes.forEach(box=>{
+   box.addEventListener("change", update);
+});
