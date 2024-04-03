@@ -33,12 +33,7 @@ function update(){
 
 }
 Object.values(ranges).forEach(range => {
-   range.addEventListener("input", evt => {
-       if(range.parentElement.parentElement.querySelector('input[type="checkbox"]').checked){
-           const letter = evt.target.id[0];
-           update();
-       }
-   })
+   range.addEventListener("input", update);
 });
 checkBoxes.forEach(box=>{
    box.addEventListener("change", update);
